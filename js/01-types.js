@@ -59,6 +59,4 @@ var x;
 var y;
 x = "1234";
 x = 1234;
-x = true;
-y = false;
 //# sourceMappingURL=01-types.js.map

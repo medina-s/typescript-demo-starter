@@ -13,11 +13,11 @@ function sayHello(name) {
 sayHello("Kenn");
 // sayHello(1); - this would give an error
 function login(username, password) {
-    var mainONe = true;
     if (username == "elevenfiftyuser" && password == "Letmein1234")
-        return mainONe;
-    return null;
+        return true;
+    return false;
 }
+console.log(login("elevenfiftyuser", "Letmein123"));
 // Optional 
 function addNumbersWithOptional(numOne, numTwo, someString) {
     console.log(someString);
@@ -27,8 +27,10 @@ function addNumbersWithOptional(numOne, numTwo, someString) {
 addNumbersWithOptional(1, 2);
 addNumbersWithOptional(1, 2, "This is optional");
 function fullName(first, last, middle) {
-    if (!middle == null)
-        return (first + last + middle);
+    if (middle)
+        return (first + " " + middle + last);
+    // console.log(first + last)
     return (first + last);
 }
+console.log(fullName("John", "Smith", "Chris"));
 //# sourceMappingURL=02-functions.js.map

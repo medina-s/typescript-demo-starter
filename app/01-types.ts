@@ -69,6 +69,4 @@ let y: number |null;
 x="1234";
 x=1234;
 
-x=true;
-y=false
 
